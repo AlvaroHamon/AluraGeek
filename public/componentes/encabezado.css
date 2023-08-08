@@ -1,0 +1,53 @@
+.encabezado {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 2rem 0;
+}
+.logo {
+  width: 11rem;
+}
+
+.contenedor-buscador{
+  width: 24.5625rem;
+  position: relative;
+}
+
+.buscador {
+  box-sizing: border-box;
+  width: 100%;
+  background-color: var(--gclaro);
+  outline-color: var(--azul100);
+  height: 40px;
+  padding: 8px 16px;
+  border-radius: 1.25rem;
+  border: none;
+  transition: all 0.5s ease-in-out;
+}
+
+.buscador:focus{
+  transition: all 0.5s ease-in-out;
+  background-color: #fff;
+}
+
+.lupa{
+  position: absolute;
+  left: 90%;
+  margin-top: 2%;
+}
+
+.login-boton {
+  display: flex;
+  width: 182px;
+  padding: 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  
+  border: 1px solid var(--azul100);
+  color: var(--azul100);
+  font-family: 'Raleway', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+}

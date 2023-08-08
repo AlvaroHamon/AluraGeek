@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  width: 100%;
+  font-family: Raleway;
+  box-sizing: border-box;
+}
+
+:root {
+  --azul100: #2a7ae4;
+  --blanco: #ffffff;
+  --gclaro: #f5f5f5;
+  --gmedio: #a2a2a2;
+  --goscuro:#464646;
+}
