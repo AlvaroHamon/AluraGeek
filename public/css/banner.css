@@ -33,5 +33,5 @@
   background: var(--azul, #2A7AE4);
   color: var(--blanco);
   font-size: 1rem;
-  
+  cursor: pointer;
 }

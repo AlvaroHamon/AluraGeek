@@ -17,7 +17,7 @@
   box-sizing: border-box;
   width: 100%;
   background-color: var(--gclaro);
-  outline-color: var(--azul100);
+  outline-color: var(--azul);
   height: 40px;
   padding: 8px 16px;
   border-radius: 1.25rem;
@@ -44,9 +44,9 @@
   align-items: center;
   gap: 10px;
   flex-shrink: 0;
-  
-  border: 1px solid var(--azul100);
-  color: var(--azul100);
+  cursor: pointer;
+  border: 1px solid var(--azul);
+  color: var(--azul);
   font-family: 'Raleway', sans-serif;
   font-size: 1rem;
   font-weight: 700;
