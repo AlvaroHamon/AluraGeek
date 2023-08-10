@@ -25,6 +25,7 @@
   height: 50px;
   border: none;
   border-radius: 5px;
+  outline-color: var(--azul);
 }
 
 .contenedor-login::placeholder {

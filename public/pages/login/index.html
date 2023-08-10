@@ -33,17 +33,28 @@
     <main class="login">
       <section class="contenedor-login">
         <label for="email">Iniciar Sesión</label>
-        <input type="email" placeholder="Escriba su correo electrónico" class="correo" id="email" required/>
-        <input type="password" placeholder="Escriba su contraseña" class="contra" required/>
+        <input
+          type="email"
+          placeholder="Escriba su correo electrónico"
+          class="correo"
+          id="email"
+          required
+        />
+        <input
+          type="password"
+          placeholder="Escriba su contraseña"
+          class="contra"
+          required
+        />
         <button class="login-btn">Entrar</button>
       </section>
     </main>
     <footer>
       <section class="footer">
         <div class="contenedor-footer">
-          <div class="logo">
+          <a class="logo" href="../../../index.html">
             <img src="../../img/Logo.png" alt="logo Alurageek" />
-          </div>
+          </a>
           <div class="links">
             <a href="#">Quienes somos</a>
             <a href="#">Política de privacidad</a>
@@ -53,8 +64,8 @@
             <a href="#">Anúncie aquí</a>
           </div>
           <form class="contacto">
-            <label for="">Hable con nosotros</label>
-            <input type="text" placeholder="Nombre" />
+            <label for="nombre-contacto">Hable con nosotros</label>
+            <input type="text" placeholder="Nombre" id="nombre-contacto" />
             <textarea
               name=""
               id=""
