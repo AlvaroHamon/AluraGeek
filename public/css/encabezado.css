@@ -60,12 +60,13 @@
   align-items: center;
   gap: 10px;
   flex-shrink: 0;
-  cursor: pointer;
+  text-decoration: none;
   border: 1px solid var(--azul);
   color: var(--azul);
   font-family: "Raleway", sans-serif;
   font-size: 1rem;
   font-weight: 700;
+
 }
 
 @media (max-width: 850px) {

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../../img/favicon.svg" type="image/svg" />
+    <link rel="stylesheet" href="../../css/index.css" />
+    <link rel="stylesheet" href="../../css/encabezado.css" />
+    <link rel="stylesheet" href="login.css" />
+    <link rel="stylesheet" href="../../css/footer.css" />
+    <script
+      src="https://kit.fontawesome.com/4e00a1b201.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Login - AluraGeek</title>
+  </head>
+  <body>
+    <header class="encabezado">
+      <a href="../../../index.html">
+        <img src="../../img/Logo.png" alt="logo Alurageek" class="logo" />
+      </a>
+      <div class="contenedor-buscador">
+        <input
+          type="search"
+          class="buscador"
+          placeholder="¿Qué deseas buscar?"
+        />
+        <div class="btn">
+          <i class="fa-solid fa-magnifying-glass lupa"></i>
+        </div>
+      </div>
+    </header>
+    <main class="login">
+      <section class="contenedor-login">
+        <label for="email">Iniciar Sesión</label>
+        <input type="email" placeholder="Escriba su correo electrónico" class="correo" id="email" required/>
+        <input type="password" placeholder="Escriba su contraseña" class="contra" required/>
+        <button class="login-btn">Entrar</button>
+      </section>
+    </main>
+    <footer>
+      <section class="footer">
+        <div class="contenedor-footer">
+          <div class="logo">
+            <img src="../../img/Logo.png" alt="logo Alurageek" />
+          </div>
+          <div class="links">
+            <a href="#">Quienes somos</a>
+            <a href="#">Política de privacidad</a>
+            <a href="#">Programa de fidelidad</a>
+            <a href="#">Nuestras Tiendas</a>
+            <a href="#">Quiero ser franquiciado</a>
+            <a href="#">Anúncie aquí</a>
+          </div>
+          <form class="contacto">
+            <label for="">Hable con nosotros</label>
+            <input type="text" placeholder="Nombre" />
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Escribe tu mensaje"
+            ></textarea>
+            <button>Enviar mensaje</button>
+          </form>
+        </div>
+      </section>
+      <section>
+        <article class="copy">
+          <p>Desarrollado por Alvaro Hamon&copy;</p>
+          <p>2023</p>
+        </article>
+      </section>
+    </footer>
+  </body>
+</html>
