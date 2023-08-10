@@ -8,32 +8,48 @@
   width: 11rem;
 }
 
-.contenedor-buscador{
-  width: 24.5625rem;
+.contenedor-buscador {
   position: relative;
+  padding: 5px;
 }
 
 .buscador {
-  box-sizing: border-box;
-  width: 100%;
   background-color: var(--gclaro);
   outline-color: var(--azul);
+  width: 0;
   height: 40px;
-  padding: 8px 16px;
-  border-radius: 1.25rem;
+  padding: 0px 20px;
+  font-size: 18px;
+  border-radius: 30px;
   border: none;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.6s ease;
 }
 
-.buscador:focus{
-  transition: all 0.5s ease-in-out;
-  background-color: #fff;
-}
-
-.lupa{
+.btn {
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  top: 0;
+  right: 0;
   position: absolute;
-  left: 90%;
-  margin-top: 2%;
+  background: var(--azul);
+  text-align: center;
+  font-size: 18px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.lupa {
+  color: white;
+}
+
+.contenedor-buscador:hover input {
+  width: 250px;
+}
+
+.buscador:focus {
+  background-color: #fff;
+  width: 240px;
 }
 
 .login-boton {
@@ -47,7 +63,22 @@
   cursor: pointer;
   border: 1px solid var(--azul);
   color: var(--azul);
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-size: 1rem;
   font-weight: 700;
+}
+
+@media (max-width: 850px) {
+  .encabezado {
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  .logo {
+    width: auto;
+  }
+
+  .contenedor-buscador {
+    order: 1;
+  }
 }

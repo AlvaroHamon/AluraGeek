@@ -6,14 +6,13 @@
 .contenedor-footer {
   display: flex;
   /* grid-template-columns: repeat(auto-fit, minmax(min(100%, 10rem), 1fr)); */
-  /* width: 100%; */
-  /* align-items: flex-start; */
-  /* gap: 112px; */
+  align-items: flex-start;
+  justify-content: space-around;
+  gap: 7rem;
 }
 
 .logo {
   display: flex;
-  width: 176px;
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
@@ -86,4 +85,22 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+@media (max-width: 850px) {
+
+  .contenedor-footer{
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .links{
+    width: 100%;
+    align-items: center;
+  }
+
+  .contacto{
+    width: 100%;
+  }
 }
