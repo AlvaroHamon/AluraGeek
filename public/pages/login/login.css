@@ -1,7 +1,7 @@
 .login {
   background-color: var(--gclaro);
   display: flex;
-  padding: 5.75rem;
+  padding: 10% 0;
   width: 100%;
   justify-content: center;
 }
@@ -9,7 +9,8 @@
 .contenedor-login {
   display: flex;
   flex-direction: column;
-  width: 423px;
+  width: 40%;
+  max-width: 500px;
   gap: 1rem;
 }
 
@@ -40,4 +41,10 @@
   background-color: var(--azul);
   color: var(--blanco);
   font-size: 1rem;
+}
+
+@media (max-width: 850px) {
+  .contenedor-login {
+    width: 60%;
+  }
 }
