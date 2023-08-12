@@ -1,25 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="../../img/favicon.svg" type="image/svg" />
     <link rel="stylesheet" href="../../css/index.css" />
     <link rel="stylesheet" href="../../css/encabezado.css" />
-    <link rel="stylesheet" href="login.css" />
+    <link rel="stylesheet" href="./productos.css" />
     <link rel="stylesheet" href="../../css/footer.css" />
     <script
       src="https://kit.fontawesome.com/4e00a1b201.js"
       crossorigin="anonymous"
     ></script>
-    <title>Login - AluraGeek</title>
+    <title>Agregar Producto - AluraGeek</title>
   </head>
   <body>
     <header class="encabezado">
-      <a href="../../../index.html">
-        <img src="../../img/Logo.png" alt="logo Alurageek" class="logo" />
-      </a>
+      <a href="../../../index.html"
+        ><img src="../../img/Logo.png" alt="logo Alurageek" class="logo"
+      /></a>
       <div class="contenedor-buscador">
         <input
           type="search"
@@ -30,24 +29,27 @@
           <i class="fa-solid fa-magnifying-glass lupa"></i>
         </div>
       </div>
+      <a href="#" class="login-boton">Menú Administrador</a>
     </header>
-    <main class="login">
-      <section class="contenedor-login">
-        <label for="email">Iniciar Sesión</label>
-        <input
-          type="email"
-          placeholder="Escriba su correo electrónico"
-          class="correo"
-          id="email"
-          required
-        />
-        <input
-          type="password"
-          placeholder="Escriba su contraseña"
-          class="contra"
-          required
-        />
-        <button class="login-btn">Entrar</button>
+    <main>
+      <section class="productos">
+        <form action="" class="contenedor-productos">
+          <label for="" class="titulo-producto">Agregar nuevo producto</label>
+          <label for="file" class="botones seleccion">Selecciona Archivo</label>
+          <input type="file" id="file" class="file"/>
+          <input type="text" placeholder="Categoría" class="inputs"/>
+          <input type="text" placeholder="Nombre Del Producto" class="inputs"/>
+          <input type="number" placeholder="Precio Del Producto" class="inputs"/>
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Descripción Del Producto"
+            class="texts"
+          ></textarea>
+          <button class="botones add">Agregar producto</button>
+        </form>
       </section>
     </main>
     <footer>
@@ -62,7 +64,7 @@
             <a href="#">Programa de fidelidad</a>
             <a href="#">Nuestras Tiendas</a>
             <a href="#">Quiero ser franquiciado</a>
-            <a href="#">Anúncie aquí</a>
+            <a href="#">Anuncié aquí</a>
           </div>
           <form class="contacto">
             <label for="nombre-contacto">Hable con nosotros</label>

@@ -1,0 +1,40 @@
+.productos {
+  background-color: var(--gclaro);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 4rem 0;
+}
+
+.contenedor-productos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 60%;
+  max-width: 600px;
+}
+
+.titulo-producto {
+  color: var(--goscuro);
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.seleccion {
+  background-color: var(--azul);
+  color: var(--blanco);
+  border: none;
+  font-size: 1rem;
+}
+
+.add{
+  background-color: var(--blanco);
+  color: var(--azul);
+  border: 1px solid var(--azul);
+  font-size: 1rem;
+}
+
+.file {
+  display: none;
+}
