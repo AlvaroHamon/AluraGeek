@@ -80,10 +80,10 @@
     max-height: fit-content;
   }
   .titulo-producto {
-    font-size: 2.5rem;
+    font-size: 1.375rem;
   }
 
   .encabezado-similares{
-
+font-size: 1.375rem;
   }
 }
