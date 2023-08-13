@@ -1,0 +1,89 @@
+.contenedor-productos {
+  background-color: var(--gclaro);
+  padding: 6%;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.ver-producto {
+  display: flex;
+  width: 100%;
+  max-height: 500px;
+  gap: 1rem;
+}
+
+.img-producto {
+  max-width: 400px;
+  max-height: 400px;
+}
+
+.textos-producto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  color: var(--goscuro);
+}
+
+.titulo-producto {
+  font-size: 3.25rem;
+  font-weight: 500;
+}
+
+.precio-producto {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.descripcion-producto {
+  text-align: justify;
+}
+
+.similares {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.encabezado-similares {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.contenido-similares {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 10rem), 1fr));
+  gap: 1rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  color: var(--goscuro);
+}
+
+.card p {
+  font-size: 0.875rem;
+}
+
+.card a {
+  text-decoration: none;
+  color: var(--azul);
+  font-weight: 700;
+}
+
+@media (max-width: 850px) {
+  .ver-producto {
+    flex-direction: column;
+    max-height: fit-content;
+  }
+  .titulo-producto {
+    font-size: 2.5rem;
+  }
+
+  .encabezado-similares{
+
+  }
+}
