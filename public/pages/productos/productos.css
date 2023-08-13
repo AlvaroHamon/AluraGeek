@@ -21,6 +21,16 @@
   font-weight: 700;
 }
 
+.contenedor-previo{
+  width: 100%;
+  display: contents;
+}
+
+.previo{
+  max-width: 40%;
+  border-radius: 100%;
+}
+
 .seleccion {
   background-color: var(--azul);
   color: var(--blanco);
