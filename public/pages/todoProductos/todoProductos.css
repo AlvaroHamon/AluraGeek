@@ -1,0 +1,23 @@
+.contenido-producto {
+  padding: 5% 10%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 10rem), 1fr));
+  gap: 1rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  color: var(--goscuro);
+}
+
+.card p {
+  font-size: 0.875rem;
+}
+
+.card a {
+  text-decoration: none;
+  color: var(--azul);
+  font-weight: 700;
+}

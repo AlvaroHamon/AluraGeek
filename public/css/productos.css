@@ -15,7 +15,7 @@
   font-size: 32px;
 }
 
-.encabezado-productos button {
+.encabezado-productos a {
   color: var(--azul);
   font-family: Raleway;
   font-size: 16px;
@@ -24,7 +24,7 @@
   background: none;
   display: flex;
   align-items: center;
-  cursor: pointer;
+  text-decoration: none;
 }
 
 .contenido-producto {
