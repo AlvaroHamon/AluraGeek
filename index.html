@@ -3,84 +3,76 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="./public/img/favicon.svg" type="image/svg">
-    <link rel="stylesheet" href="./public/css/index.css" />
-    <link rel="stylesheet" href="./public/css/encabezado.css" />
-    <link rel="stylesheet" href="./public/css/banner.css">
-    <link rel="stylesheet" href="./public/css/productos.css">
-    <link rel="stylesheet" href="./public/css/footer.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/4e00a1b201.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="./img/favicon.svg" type="image/svg" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/encabezado.css" />
+    <link rel="stylesheet" href="./css/banner.css" />
+    <link rel="stylesheet" href="./css/productos.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/4e00a1b201.js"
+      crossorigin="anonymous"
+    ></script>
     <title>AluraGeek</title>
   </head>
   <body>
     <header class="encabezado">
-      <a href="./index.html"><img src="./public/img/Logo.png" alt="logo Alurageek" class="logo" /></a>
+      <a href="./index.html"
+        ><img src="./img/Logo.png" alt="logo Alurageek" class="logo"
+      /></a>
       <div class="contenedor-buscador">
-        <input type="search" class="buscador" placeholder="¿Qué deseas buscar?" id="buscador"/>
+        <input
+          type="search"
+          class="buscador"
+          placeholder="¿Qué deseas buscar?"
+          id="buscador"
+        />
         <div class="btn">
-        <i class="fa-solid fa-magnifying-glass lupa"></i>
+          <i class="fa-solid fa-magnifying-glass lupa"></i>
         </div>
       </div>
-      <a href="./public/pages/login/index.html" class="login-boton">Login</a>
-      <a href="./public/pages/productos/index.html" class=" login-boton">Crear Producto</a>
+      <a href="./pages/login/index.html" class="login-boton">Login</a>
+      <a href="./pages/editarProducto/index.html" class="login-boton"
+        >Crear Categoria</a
+      >
+      <a href="./pages/productos/index.html" class="login-boton"
+        >Crear Producto</a
+      >
     </header>
     <main>
       <section class="banner">
-        <div class="banner-contenedor">
-          <h1 class="banner-titulo">Febrero Promocional</h1>
-          <h2 class="banner-subtitulo">Productos seleccionados con el 33% de descuento</h2>
-          <button class="banner-boton">Ver productos</button>
+        <div class="banner-fondo">
+          <div class="banner-contenedor">
+            <h1 class="banner-titulo">Febrero Promocional</h1>
+            <h2 class="banner-subtitulo">
+              Productos seleccionados con el 33% de descuento
+            </h2>
+            <button class="banner-boton">Ver productos</button>
+          </div>
         </div>
       </section>
       <section class="productos">
         <div class="seccion-producto">
           <div class="encabezado-productos">
             <h2>Star Wars</h2>
-            <a href="./public/pages/todoProductos/index.html">
+            <a href="./pages/todoProductos/index.html">
               Ver Todo
-              <img src="./public/img/arrow_back_black_24dp 1.svg" alt="">
+              <img src="./img/arrow_back_black_24dp 1.svg" alt="" />
             </a>
           </div>
-          <div class="contenido-producto">
+          <div class="contenido-producto" data-card>
             <div class="card">
-              <img src="./public/img/unsplash-1-vv-1-m-rafd-7-a.png" alt="producto">
-              <p>Star Wars</p>
-              <strong>$23000</strong>
-              <a href="./public/pages/descripcionProducto/index.html">ver producto</a>
-            </div>
-            <div class="card">
-              <img src="./public/img/unsplash-4-o-hk-k-555-s-1-a.png" alt="producto">
-              <p>dark vader</p>
-              <strong>$23000</strong>
-              <a href="#">ver producto</a>
-            </div>
-            <div class="card">
-              <img src="./public/img/unsplash-6-fdxgy-9-j-6-y-4.png" alt="producto">
-              <p>luke</p>
-              <strong>$23000</strong>
-              <a href="#">ver producto</a>
-            </div>
-            <div class="card">
-              <img src="./public/img/unsplash-ep-rfehb-njo.png" alt="producto">
-              <p>yoda</p>
-              <strong>$23000</strong>
-              <a href="#">ver producto</a>
-            </div>
-            <div class="card">
-              <img src="./public/img/unsplash-ke-g-to-dvn-0-l-4.png" alt="producto">
-              <p>obi wan</p>
-              <strong>$23000</strong>
-              <a href="#">ver producto</a>
-            </div>
-            <div class="card">
-              <img src="./public/img/unsplash-r-8-l-1-l-9-rn-198.png" alt="producto">
+              <i class="fa-solid fa-circle-xmark eliminar" data-eliminar></i>
+              <img src="./img/unsplash-r-8-l-1-l-9-rn-198.png" alt="producto" />
               <p>jedi</p>
               <strong>$23000</strong>
-              <a href="">Ver Producto
-              </a>
+              <a href="">Ver Producto </a>
             </div>
           </div>
         </div>
@@ -90,7 +82,7 @@
       <section class="footer">
         <div class="contenedor-footer">
           <a href="./index.html" class="logo">
-            <img src="./public/img/Logo.png" alt="logo Alurageek">
+            <img src="./img/Logo.png" alt="logo Alurageek" />
           </a>
           <div class="links">
             <a href="#">Quienes somos</a>
@@ -102,8 +94,14 @@
           </div>
           <form class="contacto">
             <label for="nombre-contacto">Hable con nosotros</label>
-            <input type="text" placeholder="Nombre" id="nombre-contacto">
-            <textarea name="" id="" cols="30" rows="10" placeholder="Escribe tu mensaje"></textarea>
+            <input type="text" placeholder="Nombre" id="nombre-contacto" />
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Escribe tu mensaje"
+            ></textarea>
             <button>Enviar mensaje</button>
           </form>
         </div>
@@ -115,6 +113,8 @@
         </article>
       </section>
     </footer>
-    <script src="./public/js/buscador.js"></script>
+    <script type="module" src="./controller/actualizar.productos.js"></script>
+    <script type="module" src="./controller/eliminar.js"></script>
+    <script src="./controller/buscador.js"></script>
   </body>
 </html>

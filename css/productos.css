@@ -8,11 +8,15 @@
 .encabezado-productos {
   display: flex;
   justify-content: space-between;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px #313131;
+  padding: 5px;
 }
 
 .encabezado-productos h2 {
   color: var(--goscuro, #464646);
   font-size: 32px;
+
 }
 
 .encabezado-productos a {

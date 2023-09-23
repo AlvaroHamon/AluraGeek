@@ -1,14 +1,19 @@
 .banner {
-  background-image: url("../img/banner.png");
+  background-image: url("https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2020/02/estantes-figuras-funko-pop-1861835.jpg?tf=3840x");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 352px;
+  height: 400px;
   display: flex;
   align-items: end;
-  padding: 1rem;
 }
-
+.banner-fondo{
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: end;
+}
 .banner-contenedor {
   margin-left: 10%;
   padding: 2rem 0;
@@ -27,29 +32,29 @@
   font-weight: 700;
 }
 
-.banner-boton{
+.banner-boton {
   padding: 1rem;
-  background: var(--azul, #2A7AE4);
+  background: var(--azul, #2a7ae4);
   color: var(--blanco);
   font-size: 1rem;
   cursor: pointer;
 }
 
 @media (max-width: 850px) {
-  .banner{
+  .banner {
     height: auto;
   }
 
-  .banner-contenedor{
+  .banner-contenedor {
     margin: 0;
   }
-  
-  .banner-titulo{
+
+  .banner-titulo {
     font-size: 2rem;
     font-weight: 500;
   }
 
-  .banner-subtitulo{
+  .banner-subtitulo {
     font-size: 1rem;
     font-weight: 500;
     line-height: normal;

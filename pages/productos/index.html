@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../../img/favicon.svg" type="image/svg" />
+    <link rel="stylesheet" href="../../css/index.css" />
+    <link rel="stylesheet" href="../../css/encabezado.css" />
+    <link rel="stylesheet" href="./productos.css" />
+    <link rel="stylesheet" href="../../css/footer.css" />
+    <script
+      src="https://kit.fontawesome.com/4e00a1b201.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Agregar Producto - AluraGeek</title>
+  </head>
+  <body>
+    <header class="encabezado">
+      <a href="../../../index.html"
+        ><img src="../../img/Logo.png" alt="logo Alurageek" class="logo"
+      /></a>
+      <a href="../todoProductos/index.html" class="login-boton"
+        >Menú Administrador</a
+      >
+    </header>
+    <main>
+      <section class="productos">
+        <form action="" class="contenedor-productos" data-form>
+          <label class="titulo-producto">Agregar nuevo producto</label>
+          <div class="contenedor-previo">
+            <img
+              src="../../img/perfil.png"
+              alt="imagen prueba"
+              class="previo"
+              id="img"
+            />
+            <label for="foto" class="botones seleccion"
+              >Selecciona Archivo o escribe la URL abajo</label
+            >
+            <input
+              type="file"
+              id="foto"
+              name="foto"
+              class="file"
+              accept="image/*"
+              data-imagen
+            />
+            <input
+              type="text"
+              placeholder="Agrega el link de la imagen"
+              class="inputs"
+              data-src
+            />
+          </div>
+          <input
+            type="text"
+            placeholder="Categoría"
+            class="inputs"
+            data-categoria
+          />
+          <input
+            type="text"
+            placeholder="Nombre Del Producto"
+            class="inputs"
+            data-nombre
+          />
+          <input
+            type="number"
+            placeholder="Precio Del Producto"
+            class="inputs"
+            data-precio
+          />
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Descripción Del Producto"
+            class="texts"
+            data-decripcion
+          ></textarea>
+          <button type="submit" class="botones add">Agregar producto</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <section class="footer">
+        <div class="contenedor-footer">
+          <a class="logo" href="../../../index.html">
+            <img src="../../img/Logo.png" alt="logo Alurageek" />
+          </a>
+          <div class="links">
+            <a href="#">Quienes somos</a>
+            <a href="#">Política de privacidad</a>
+            <a href="#">Programa de fidelidad</a>
+            <a href="#">Nuestras Tiendas</a>
+            <a href="#">Quiero ser franquiciado</a>
+            <a href="#">Anuncié aquí</a>
+          </div>
+          <form class="contacto">
+            <label for="nombre-contacto">Hable con nosotros</label>
+            <input type="text" placeholder="Nombre" id="nombre-contacto" />
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Escribe tu mensaje"
+            ></textarea>
+            <button>Enviar mensaje</button>
+          </form>
+        </div>
+      </section>
+      <section>
+        <article class="copy">
+          <p>Desarrollado por Alvaro Hamon&copy;</p>
+          <p>2023</p>
+        </article>
+      </section>
+    </footer>
+    <script src="./previo.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"
+      integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script type="module" src="../../controller/add.controller.js"></script>
+  </body>
+</html>

@@ -5,9 +5,17 @@
   gap: 1rem;
 }
 
-.card {
+.eliminar{
+  display: block;
+  
+}
+.editar{
+  display: block;
+}
+/* .card {
   display: flex;
   flex-direction: column;
+  position: relative;
   gap: 0.5rem;
   color: var(--goscuro);
 }
@@ -20,4 +28,4 @@
   text-decoration: none;
   color: var(--azul);
   font-weight: 700;
-}
+} */
