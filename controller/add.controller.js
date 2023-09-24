@@ -9,10 +9,14 @@ addProducto.addEventListener("submit", (e) => {
     const precio = document.querySelector('[data-precio]').value
     const descripcion = document.querySelector('[data-decripcion]').value
 
-    clienteServicios.crearProductos(src, categoria, nombre, precio, descripcion)
-        .then((respuesta) => {
-            console.log(respuesta);
-        })
-        .catch((e) => { console.log(e); })
-
+    const crear = async () => {
+        try {
+            const datos = await clienteServicios.crearProductos(src, categoria, nombre, precio, descripcion)
+            console.log(datos);
+            return datos
+        } catch (error) {
+            console.log("error en funcion crear", error);
+        }
+    }
+    crear()
 })
