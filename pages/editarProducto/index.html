@@ -30,9 +30,11 @@
           <i class="fa-solid fa-magnifying-glass lupa"></i>
         </div>
       </div>
-      <a href="./pages/login/index.html" class="login-boton">Login</a>
-      <a href="#" class="login-boton">Crear Categoria</a>
-      <a href="./pages/productos/index.html" class="login-boton"
+      <a href="../login/index.html" class="login-boton">Login</a>
+      <a href="../crearCategoria/index.html" class="login-boton"
+        >Crear Categoria</a
+      >
+      <a href="../crearProductos/index.html" class="login-boton"
         >Crear Producto</a
       >
     </header>
@@ -46,12 +48,9 @@
             class="inputs"
             data-src
           />
-          <input
-            type="text"
-            placeholder="Categoría"
-            class="inputs"
-            data-categoria
-          />
+          <select class="inputs placeholder" data-categoria>
+            <option value="" disabled selected>Categoria</option>
+          </select>
           <input
             type="text"
             placeholder="Nombre Del Producto"
@@ -116,5 +115,6 @@
       type="module"
       src="../../controller/actualizar.controller.js"
     ></script>
+    <script type="module" src="../../controller/categorias.controller.js"></script>
   </body>
 </html>

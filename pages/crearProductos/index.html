@@ -19,7 +19,7 @@
       <a href="../../../index.html"
         ><img src="../../img/Logo.png" alt="logo Alurageek" class="logo"
       /></a>
-      <a href="../todoProductos/index.html" class="login-boton"
+      <a href="../todosLosProductos/index.html" class="login-boton"
         >Menú Administrador</a
       >
     </header>
@@ -27,37 +27,15 @@
       <section class="productos">
         <form action="" class="contenedor-productos" data-form>
           <label class="titulo-producto">Agregar nuevo producto</label>
-          <div class="contenedor-previo">
-            <img
-              src="../../img/perfil.png"
-              alt="imagen prueba"
-              class="previo"
-              id="img"
-            />
-            <label for="foto" class="botones seleccion"
-              >Selecciona Archivo o escribe la URL abajo</label
-            >
-            <input
-              type="file"
-              id="foto"
-              name="foto"
-              class="file"
-              accept="image/*"
-              data-imagen
-            />
-            <input
-              type="text"
-              placeholder="Agrega el link de la imagen"
-              class="inputs"
-              data-src
-            />
-          </div>
           <input
             type="text"
-            placeholder="Categoría"
+            placeholder="Agrega el link de la imagen"
             class="inputs"
-            data-categoria
+            data-src
           />
+          <select class="inputs placeholder" data-categoria>
+            <option value="" disabled selected>Categoria</option>
+          </select>
           <input
             type="text"
             placeholder="Nombre Del Producto"
@@ -118,13 +96,13 @@
         </article>
       </section>
     </footer>
-    <script src="./previo.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/uuid/8.3.2/uuid.min.js"
       integrity="sha512-UNM1njAgOFUa74Z0bADwAq8gbTcqZC8Ej4xPSzpnh0l6KMevwvkBvbldF9uR++qKeJ+MOZHRjV1HZjoRvjDfNQ=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script type="module" src="../../controller/categorias.controller.js"></script>
     <script type="module" src="../../controller/add.controller.js"></script>
   </body>
 </html>

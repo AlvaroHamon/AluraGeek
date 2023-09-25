@@ -2,21 +2,39 @@
 
 const obtenerProductos = async () => {
   try {
-    const respuesta = await fetch("https://alurageek-l7w3ih4e5-alvarohamon.vercel.app/producto")
-    if (respuesta.status >= 200 && respuesta.status < 300) {
+    const respuesta = await fetch("http://localhost:3000/producto")
+    if (respuesta.ok) {
       const datos = await respuesta.json()
       return datos
     } else {
       throw new Error()
     }
   } catch (error) {
-    window.location.href("./screens/error.html")
+    console.log("error al obtener productos", error);
+  }
+}
+
+const crearCategoria = async (categoria) => {
+  try {
+    const respuesta = await fetch("http://localhost:3000/producto", {
+      method: "POST",
+      headers: { "Content-type": "application/json" },
+      body: JSON.stringify({ categoria, id: uuid.v4() })
+    })
+    if (respuesta.ok) {
+      const datos = await respuesta.json()
+      return datos
+    } else {
+      throw new Error()
+    }
+  } catch (error) {
+    console.log("error en funcion crearCategoria", error);
   }
 }
 
 const crearProductos = async (src, categoria, nombre, precio, descripcion) => {
   try {
-    const respuesta = await fetch("https://alurageek-l7w3ih4e5-alvarohamon.vercel.app/producto", {
+    const respuesta = await fetch("http://localhost:3000/producto", {
       method: "POST",
       headers: { "Content-type": "application/json" },
       body: JSON.stringify({ src, categoria, nombre, precio, descripcion, id: uuid.v4() })
@@ -32,15 +50,6 @@ const crearProductos = async (src, categoria, nombre, precio, descripcion) => {
       console.error("Error al crear el producto:", errorData);
       throw new Error('Error al crear el producto');
     }
-
-
-    // if (respuesta.status >= 200 && respuesta.status < 300) {
-    //   const datos = await respuesta.json();
-    //   console.log(datos);
-    //   return datos;
-    // } else {
-    //   throw new Error('Error al crear el producto');
-    // }
   } catch (error) {
     console.log('Error en la solicitud al servidor:', error);
     throw new Error('Error en la solicitud al servidor');
@@ -49,7 +58,7 @@ const crearProductos = async (src, categoria, nombre, precio, descripcion) => {
 
 const eliminarProducto = async (id) => {
   try {
-    const respuesta = await fetch(`https://alurageek-l7w3ih4e5-alvarohamon.vercel.app/producto?id=${id}`, {
+    const respuesta = await fetch(`http://localhost:3000/producto/${id}`, {
       method: "DELETE"
     })
     if (respuesta.status >= 200 && respuesta.status < 300) {
@@ -65,7 +74,7 @@ const eliminarProducto = async (id) => {
 const editarProducto = async (id) => {
 
   try {
-    const respuesta = await fetch(`https://alurageek-l7w3ih4e5-alvarohamon.vercel.app/producto/${id}`)
+    const respuesta = await fetch(`http://localhost:3000/producto/${id}`)
     if (respuesta.status >= 200 && respuesta.status < 300) {
       const datos = await respuesta.json();
       return datos
@@ -80,7 +89,7 @@ const editarProducto = async (id) => {
 
 const actualizarProducto = async (src, categoria, nombre, precio, descripcion, id) => {
   try {
-    const datos = await fetch(`https://alurageek-l7w3ih4e5-alvarohamon.vercel.app/producto${id}`, {
+    const datos = await fetch(`http://localhost:3000/producto/${id}`, {
       method: "PUT",
       headers: { "Content-type": "application/json" },
       body: JSON.stringify({ src, categoria, nombre, precio, descripcion })
@@ -95,6 +104,7 @@ const actualizarProducto = async (src, categoria, nombre, precio, descripcion, i
 export const clienteServicios = {
   obtenerProductos,
   crearProductos,
+  crearCategoria,
   eliminarProducto,
   editarProducto,
   actualizarProducto

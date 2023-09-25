@@ -1,4 +1,4 @@
-import { clienteServicios } from './conexion.server.js'
+import { clienteServicios } from './conexion.servidor.js'
 
 //traer información actual para editarla
 
@@ -23,6 +23,7 @@ const obtenerInfo = async () => {
     descripcion.value = producto.descripcion;
   } catch (e) {
     console.log(e);
+    window.location.href = "../error/error.html"
   }
 }
 obtenerInfo(id)

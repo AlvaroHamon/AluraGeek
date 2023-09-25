@@ -1,4 +1,4 @@
-import { clienteServicios } from "./conexion.server.js"
+import { clienteServicios } from "./conexion.servidor.js"
 const addProducto = document.querySelector('[data-form]')
 
 addProducto.addEventListener("submit", (e) => {

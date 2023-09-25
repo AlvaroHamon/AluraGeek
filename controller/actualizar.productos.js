@@ -1,4 +1,4 @@
-import { clienteServicios } from "./conexion.server.js"
+import { clienteServicios } from "./conexion.servidor.js"
 //cards producto de pagina principal
 const crearProducto = (src, nombre, precio, id) => {
   const producto = document.createElement("div")
@@ -9,7 +9,7 @@ const crearProducto = (src, nombre, precio, id) => {
       <img src="${src}" alt="${nombre}" />
       <p>${nombre}</p>
       <strong>$${precio}</strong>
-      <a href="../pages/descripcionProducto/index.html?id=">ver producto</a>
+      <a href="../pages/descripcionProducto/index.html?id=${id}">ver producto</a>
     `;
   producto.innerHTML = contenido;
   producto.classList.add("card")
@@ -17,7 +17,6 @@ const crearProducto = (src, nombre, precio, id) => {
   btnEliminar.addEventListener('click', () => {
     const id = btnEliminar.id
     eliminarItem(id)
-    // clienteServicios.eliminarProducto(id).then(respuesta => console.log(respuesta)).catch(error => console.log(error))
   })
 
   const eliminarItem = async (id) => {

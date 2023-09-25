@@ -81,8 +81,8 @@ html {
   color: var(--azul);
   font-weight: 700;
 }
-
-i{
+.contenido-producto .card .editar,
+.contenido-producto .card .eliminar {
   display: none;
 }
 
@@ -101,12 +101,12 @@ i{
 }
 
 .editar {
+  display: none;
   position: absolute;
   color: #a1a1a1;
   left: 2px;
   top: 2px;
   transition: all ease 0.4s;
-  display: none;
 }
 .editar:hover {
   color: var(--azul);
