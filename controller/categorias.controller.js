@@ -2,7 +2,7 @@ const select = document.querySelector("[data-categoria]")
 
 const obtenerCategoria = async () => {
   try {
-    const respuesta = await fetch("http://localhost:3000/categorias")
+    const respuesta = await fetch("https://alurageek-l7w3ih4e5-alvarohamon.vercel.app/categorias")
     const data = await respuesta.json()
     data.forEach(({ categoria }) => {
       const option = document.createElement("option")
@@ -19,7 +19,7 @@ obtenerCategoria()
 
 const crearCategoria = async (categoria) => {
   try {
-    const respuesta = await fetch("http://localhost:3000/categorias", {
+    const respuesta = await fetch("https://alurageek-l7w3ih4e5-alvarohamon.vercel.app/categorias", {
       method: "POST",
       headers: { "Content-type": "application/json" },
       body: JSON.stringify({ categoria, id: uuid.v4() })
