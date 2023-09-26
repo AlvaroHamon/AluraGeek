@@ -2,7 +2,7 @@
 
 const obtenerProductos = async () => {
   try {
-    const respuesta = await fetch("https://alurageek-l7w3ih4e5-alvarohamon.vercel.app/producto")
+    const respuesta = await fetch("https://alurageek-api-xi.vercel.app/producto")
     if (respuesta.ok) {
       const datos = await respuesta.json()
       return datos
@@ -16,7 +16,7 @@ const obtenerProductos = async () => {
 
 const crearCategoria = async (categoria) => {
   try {
-    const respuesta = await fetch("https://alurageek-l7w3ih4e5-alvarohamon.vercel.app/producto", {
+    const respuesta = await fetch("https://alurageek-api-xi.vercel.app/producto", {
       method: "POST",
       headers: { "Content-type": "application/json" },
       body: JSON.stringify({ categoria, id: uuid.v4() })
@@ -34,7 +34,7 @@ const crearCategoria = async (categoria) => {
 
 const crearProductos = async (src, categoria, nombre, precio, descripcion) => {
   try {
-    const respuesta = await fetch("https://alurageek-l7w3ih4e5-alvarohamon.vercel.app/producto", {
+    const respuesta = await fetch("https://alurageek-api-xi.vercel.app/producto", {
       method: "POST",
       headers: { "Content-type": "application/json" },
       body: JSON.stringify({ src, categoria, nombre, precio, descripcion, id: uuid.v4() })
@@ -58,7 +58,7 @@ const crearProductos = async (src, categoria, nombre, precio, descripcion) => {
 
 const eliminarProducto = async (id) => {
   try {
-    const respuesta = await fetch(`https://alurageek-l7w3ih4e5-alvarohamon.vercel.app/producto/${id}`, {
+    const respuesta = await fetch(`https://alurageek-api-xi.vercel.app/producto/${id}`, {
       method: "DELETE"
     })
     if (respuesta.status >= 200 && respuesta.status < 300) {
@@ -74,7 +74,7 @@ const eliminarProducto = async (id) => {
 const editarProducto = async (id) => {
 
   try {
-    const respuesta = await fetch(`https://alurageek-l7w3ih4e5-alvarohamon.vercel.app/producto/${id}`)
+    const respuesta = await fetch(`https://alurageek-api-xi.vercel.app/producto/${id}`)
     if (respuesta.status >= 200 && respuesta.status < 300) {
       const datos = await respuesta.json();
       return datos
@@ -89,7 +89,7 @@ const editarProducto = async (id) => {
 
 const actualizarProducto = async (src, categoria, nombre, precio, descripcion, id) => {
   try {
-    const datos = await fetch(`https://alurageek-l7w3ih4e5-alvarohamon.vercel.app/producto/${id}`, {
+    const datos = await fetch(`https://alurageek-api-xi.vercel.app/producto/${id}`, {
       method: "PUT",
       headers: { "Content-type": "application/json" },
       body: JSON.stringify({ src, categoria, nombre, precio, descripcion })
